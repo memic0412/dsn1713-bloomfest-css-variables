@@ -18,15 +18,32 @@
      Type them here from the Design Tokens table in the Brightspace:
      colours first, then the -rgb versions, then fonts and sizes. */
 
+--bf-black: #0a0a0a;
+--bf-charcoal: #111111;
+--bf-white: #ffffff;
+--bf-pink: #ff3ea5;
+--bf-pink-dark: #e6288f;
+--bf-lime: #aaff00;
+--bf-sky: #38d9f5;
+--bf-orange: #ff7c2a;
+--bf-orange-dark: #e8691a;
+--bf-purple: #7c3aed;
+--bf-pink-rgb: 255, 62, 165;
+--bf-lime-rgb: 170, 255, 0;
+--bf-sky-rgb: 56, 217, 245;
 
+--bf-font-display: 'Bebas Neue', Impact, sans-serif;
+--bf-font-body: 'Plus Jakarta Sans', sans-serif;
+
+--bf-fs-hero: clamp(4rem, 10vw, 8rem);
+--bf-space-section: 5rem;
+--bf-radius: 4px;
 
   /* TASK 2: Bootstrap overrides
      Find Bootstrap's variables for the page background, text
      colour, body font, corner radius, primary colour, info
      colour and link colour. Point each one at your variables.
      Remember: some colours also need their -rgb twin. */
-
-
 
 }
 
@@ -41,16 +58,19 @@ h1, h2, h3,
 .footer-logo,
 .form-heading,
 .blockquote {
-   font-family: ________________;
+
+   font-family: var(--bf-font-display);
 }
 
 .hero-title {
-   font-size: ________________;
+
+   font-size: var(--bf-fs-hero);
 }
 
 .section {
-   padding-top: ________________;
-   padding-bottom: ________________;
+
+   padding-top: var(--bf-space-section);
+
 }
 
 
@@ -59,15 +79,15 @@ h1, h2, h3,
 
 .hero-dates,
 .section-label {
-   color: ________________;
+   color: var(--bf-lime);
 }
 
 .festival-quote::before {
-   color: ________________;
+   color: var(--bf-pink);
 }
 
 .info-text p:first-of-type::first-letter {
-   color: ________________;
+   color: var(--bf-orange);
 }
 
 
@@ -77,14 +97,19 @@ h1, h2, h3,
 
 .site-header {
 
+background-color: var(--bf-black);
+
 }
 
 .schedule-section {
+
+background-color: var(#111111);
 
 }
 
 .quote-section {
 
+   background-color: var();
 }
 
 
@@ -95,6 +120,7 @@ h1, h2, h3,
 
 .navbar {
 
+   
 }
 
 
