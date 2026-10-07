@@ -47,6 +47,10 @@
 
 }
 
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bf-pink-rgb), var(--bs-text-opacity)) !important;
+}
 
 /* TASK 3: Fonts and sizes in your --bf variables
    Replace ______________ with accessing the variable set in :root. 
@@ -60,7 +64,12 @@ h1, h2, h3,
 .blockquote {
 
    font-family: var(--bf-font-display);
+  
 }
+
+
+  
+
 
 .hero-title {
 
@@ -131,8 +140,17 @@ background-color: var(--bf-charcoal);
    --bs- variables for this button. */
 
 .btn-primary {
+   --bs-btn-color: #fff;
+   --bs-btn-bg: var(--bf-pink);
+   --bs-btn-border-color: var(--bf-pink);
+   --bs-btn-hover-color: #fff ;
+   --bs-btn-hover-bg: var(--bf-pink-dark);
+   --bs-btn-hover-border-color: #fff;
+   --bs-btn-active-color: #fff;
+   --bs-btn-active-bg: #fff;
 
 }
+
 
 
 /* TASK 8: The orange button
@@ -160,7 +178,7 @@ background-color: var(--bf-charcoal);
 
 .artist-card:has(.headliner-badge) {
    /* Uses pink variable */
-
+--bs-card-bg: var(--bf-pink)
 }
 
 
