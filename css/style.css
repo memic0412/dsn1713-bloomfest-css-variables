@@ -119,8 +119,9 @@ background-color: var(--bf-charcoal);
    overriding the correct --bs- variables. */
 
 .navbar {
---bs-button-color: var()
-   
+
+--bs-navbar-hover-color: var(--bf-lime);
+
 }
 
 
