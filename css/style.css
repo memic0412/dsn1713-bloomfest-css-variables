@@ -21,7 +21,7 @@
 --bf-black: #0a0a0a;
 --bf-charcoal: #111111;
 --bf-white: #ffffff;
---bf-pink: rgb(255, 62, 165);
+--bf-pink: #ff3ea5;
 --bf-pink-dark: #e6288f;
 --bf-lime: #aaff00;
 --bf-sky: #38d9f5;
@@ -41,6 +41,8 @@
 
 --bs-body-bg: var(--bf-black);
 --bs-body-color: var(--bf-white);
+--bs-primary: var(--bf-pink);
+--bs-primary-rgb: var(--bf-pink-rgb);
 
   /* TASK 2: Bootstrap overrides
      Find Bootstrap's variables for the page background, text
@@ -53,6 +55,7 @@
 .text-primary {
     --bs-text-opacity: 1;
     color: rgba(var(--bf-pink-rgb), var(--bs-text-opacity)) !important;
+    
 }
 
 /* TASK 3: Fonts and sizes in your --bf variables
@@ -198,10 +201,6 @@ background-color: var(--bf-charcoal);
 
 }
 
-.border-primary {
-    --bs-border-opacity: 1;
-    border-color: var(--bf-pink), var(--bs-border-opacity)
-   }
 
 /* TASK 10: The form focus glow
    Bootstrap has NO variable for this. Use DevTools to see which
