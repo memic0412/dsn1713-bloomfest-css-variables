@@ -39,6 +39,9 @@
 --bf-space-section: 5rem;
 --bf-radius: 4px;
 
+--bs-body-bg: var(--bf-black);
+--bs-body-color: var(--bf-white);
+
   /* TASK 2: Bootstrap overrides
      Find Bootstrap's variables for the page background, text
      colour, body font, corner radius, primary colour, info
@@ -79,7 +82,7 @@ h1, h2, h3,
 .section {
 
    padding-top: var(--bf-space-section);
-
+   padding-bottom: var(--bf-space-section);
 }
 
 
@@ -89,6 +92,7 @@ h1, h2, h3,
 .hero-dates,
 .section-label {
    color: var(--bf-lime);
+
 }
 
 .festival-quote::before {
@@ -110,9 +114,14 @@ background-color: var(--bf-black);
 
 }
 
+.border-primary {
+   color: var(--bf-pink);
+}
+
 .schedule-section {
 
 background-color: var(--bf-charcoal);
+
 
 }
 
@@ -157,7 +166,14 @@ background-color: var(--bf-charcoal);
    Same variables as Task 7, plus the text colour variables. */
 
 .btn-warning {
-
+  --bs-btn-color: #fff;
+   --bs-btn-bg: var(--bf-orange);
+   --bs-btn-border-color: var(--bf-orange);
+   --bs-btn-hover-color: #fff ;
+   --bs-btn-hover-bg: var(--bf-pink-dark);
+   --bs-btn-hover-border-color: #fff;
+   --bs-btn-active-color: #fff;
+   --bs-btn-active-bg: #fff;
 }
 
 
@@ -168,7 +184,9 @@ background-color: var(--bf-charcoal);
 
 .artist-card {
    /* Uses black variable */
+--bf-space-section: 5rem;
 --bs-card-bg: var(--bf-black); 
+
 }
 
 .artist-card:hover {
@@ -193,5 +211,8 @@ background-color: var(--bf-charcoal);
    set them here using your lime variables. */
 
 .form-control:focus {
+
+/* border-color: var(--bf-lime);
+box-shadow: 0 0 0 0.25rem rgba(var(--bf-lime-rgb), 0.25); */
 
 }
