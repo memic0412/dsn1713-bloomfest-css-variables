@@ -21,7 +21,7 @@
 --bf-black: #0a0a0a;
 --bf-charcoal: #111111;
 --bf-white: #ffffff;
---bf-pink: #ff3ea5;
+--bf-pink: rgb(255, 62, 165);
 --bf-pink-dark: #e6288f;
 --bf-lime: #aaff00;
 --bf-sky: #38d9f5;
@@ -114,9 +114,7 @@ background-color: var(--bf-black);
 
 }
 
-.border-primary {
-   color: var(--bf-pink);
-}
+
 
 .schedule-section {
 
@@ -212,7 +210,7 @@ background-color: var(--bf-charcoal);
 
 .form-control:focus {
 
-/* border-color: var(--bf-lime);
-box-shadow: 0 0 0 0.25rem rgba(var(--bf-lime-rgb), 0.25); */
+border-color: var(--bf-lime);
+box-shadow: 0 0 0 0.25rem rgba(var(--bf-lime-rgb), 0.25);
 
 }
